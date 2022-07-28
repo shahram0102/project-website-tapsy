@@ -81,3 +81,222 @@
    text-align: center;
    white-space: nowrap;
  }
+
+
+ /* Button */
+.btn {
+   font-size: 1.4rem;
+   padding: 1.2rem 2.4rem;
+   border-radius: 8px;
+   cursor: pointer;
+   text-align: center;
+   white-space: nowrap;
+ }
+ 
+ .btn--primary {
+   background-color: var(--color-primary);
+   color: var(--main-white);
+ }
+ .btn--secondary {
+   background-color: var(--color-secondary-dark);
+   color: var(--main-white);
+ }
+ 
+ .btn--block {
+   width: 100%;
+   font-size: 1.6rem;
+ }
+ 
+ /* media buttons */
+ @media screen and (min-width: 1024px) {
+   .btn {
+     font-size: 1.6rem;
+   }
+   .btn--block {
+     font-size: 2rem;
+   }
+ }
+ 
+ /* Reset code tags */
+ p {
+   color: var(--color-body);
+ }
+ 
+ /* Badge */
+ 
+ .badge {
+   padding: 0.7rem 1.4rem;
+   border-radius: 25px;
+   font-weight: bold;
+   display: inline-block;
+ }
+ 
+ .badge--primary {
+   background-color: var(--color-primary);
+   color: var(--main-white);
+   margin-bottom: 0.8rem;
+ }
+ 
+ .badge--secondary {
+   background-color: var(--main-white);
+   border: 5px solid var(--color-primary);
+   color: var(--color-primary);
+ }
+ 
+ @media screen and (min-width: 1024px) {
+   .badge {
+     font-size: 1.4rem;
+   }
+ }
+ 
+ /* services */
+ .items__services {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   background-color: var(--bgc-services);
+   color: 2rem;
+   margin: 0 3rem;
+   column-gap: 2rem;
+ }
+ 
+ .services > h2 {
+   margin-bottom: 3rem;
+   margin-right: 2rem;
+ }
+ 
+ .services .item__services {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-radius: 20px;
+   overflow: hidden;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.267);
+   margin-bottom: 5rem;
+ }
+ 
+ .services .item__services .heading__service {
+   width: 100%;
+   background-color: var(--color-primary-light);
+   padding: 3rem;
+   display: flex;
+   flex-direction: column;
+ }
+ 
+ .item__services .title__service {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+ }
+ 
+ .services .item__services.light .heading__service {
+   background-color: var(--color-secondary-dark);
+ }
+ 
+ .services .item__services:hover {
+   animation: primaryServices 1s linear infinite;
+ }
+ 
+ .services .item__services.light:hover {
+   animation: secondary 1s linear infinite;
+ }
+ 
+ .item__services .title__service:nth-child(1) {
+   color: var(--main-white);
+   font-size: 1.8rem;
+ }
+ 
+ .item__services .price__service {
+   width: 100%;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   color: var(--main-white);
+   margin-bottom: 1.4rem;
+ }
+ .price__service p {
+   color: var(--main-white);
+   font-size: 2.3rem;
+ }
+ .price__service span {
+   margin-right: 0.5rem;
+   font-size: 1.6rem;
+ }
+ 
+ .heading__service > p {
+   color: var(--main-white);
+   font-weight: bold;
+   font-size: 1.8rem;
+ }
+ 
+ .services .body__service {
+   padding: 4rem 3rem;
+   background-color: var(--color-secondary-light);
+   width: 100%;
+ }
+ 
+ .body__service .desc__service {
+   font-weight: bold;
+   margin-bottom: 12rem;
+ }
+ 
+ .desc__service li {
+   margin-bottom: 3rem;
+ }
+ 
+ .desc__service li span {
+   color: var(--color-body);
+   margin-right: 1rem;
+   font-size: 1.8rem;
+ }
+ 
+ .desc__service li i {
+   color: green;
+   font-size: 3rem;
+ }
+ 
+ @keyframes primaryServices {
+   0% {
+     transform: rotate(-5deg);
+   }
+   25% {
+     transform: rotate(0deg);
+   }
+   50% {
+     transform: rotate(5deg);
+   }
+   75% {
+     transform: rotate(0deg);
+   }
+   100% {
+     transform: rotate(-5deg);
+   }
+ }
+ 
+ @keyframes secondary {
+   from {
+     transform: scale(1.1);
+   }
+   to {
+     transform: scale(1);
+   }
+ }
+ 
+ @media screen and (min-width: 1024px) {
+   .items__services {
+     grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+     column-gap: 8rem;
+   }
+   .price__service p {
+     font-size: 3rem;
+   }
+   .price__service span {
+     margin-right: 0.9rem;
+     font-size: 1.8rem;
+   }
+   .heading__service > p {
+     font-size: 1.4rem;
+   }
+   .item__services .title__service:nth-child(1) {
+     font-size: 2.2rem;
+   }
+ }
