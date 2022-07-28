@@ -726,3 +726,116 @@
      padding: 1rem 1.5rem;
    }
  }
+
+ 
+/* lists */
+.list {
+   font-size: 1.6rem;
+ }
+ 
+ .list--inline .list__item {
+   display: inline-block;
+   margin-left: 2.3rem;
+ }
+ 
+ /* Hero section */
+ .hero-section {
+   width: 100%;
+   position: relative;
+ }
+ 
+ .hero-cobtainer {
+   max-width: 1200px;
+   margin: 0 auto !important;
+ }
+ 
+ 
+ .hero-section .banner-img {
+   width: 100%;
+   height: 100%;
+ }
+ 
+ .hero-wrapper {
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 478px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .hero-wrapper .links-downloads {
+   background-image: linear-gradient(
+     51deg,
+     rgba(23, 26, 60, 0.7) 5%,
+     rgba(23, 26, 60, 0.3) 95%
+   );
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   padding: 2rem 1.5rem;
+ }
+ .hero-wrapper .links-downloads h1 {
+   font-size: 2.5rem;
+   color: var(--main-white);
+   margin-bottom: 1rem;
+ }
+ 
+ .links-downloads h2 {
+   font-size: 1.6rem;
+   color: var(--main-white);
+   margin-bottom: 3rem;
+ }
+ 
+ .links-downloads .cart-buttons {
+   display: flex;
+   flex-direction: column;
+ }
+ 
+ .links-downloads .cart-buttons .btn--downloads {
+   text-align: start;
+   min-width: 250px;
+   max-width: 250px;
+   margin-bottom: 1.5rem;
+   padding: 1.5rem;
+   border-radius: 20px;
+ }
+ .btn--downloads.secondary {
+   background: none;
+   border: 3px solid #fff;
+   color: var(--main-white);
+ }
+ 
+ @media screen and (min-width: 768px) {
+   .hero-section {
+     height: auto !important;
+   }
+   .hero-wrapper {
+     align-items: flex-start;
+     margin-top: 2rem;
+   }
+   .hero-wrapper .links-downloads {
+     width: 550px;
+     position: absolute;
+     right: 120px;
+   }
+   .links-downloads .cart-buttons {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+   }
+   .links-downloads .cart-buttons .btn--downloads {
+     font-size: 1.5rem;
+     font-weight: lighter;
+   }
+   .hero-wrapper .links-downloads h1 {
+     font-size: 4rem;
+   }
+   .hero-wrapper .links-downloads h2 {
+     font-size: 2.3rem;
+   }
+ }
+ 
