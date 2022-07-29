@@ -22,3 +22,10 @@ tabs.forEach((tab) => {
     targetTabContent.classList.add("active");
   });
 });
+
+// Accurdion
+const accordionHeader = document.querySelector(".accordion__header");
+const accordion = document.querySelector(".accordion");
+accordionHeader.addEventListener("click", () => {
+  accordion.classList.toggle("accordion__expanded");
+});
