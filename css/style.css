@@ -950,164 +950,162 @@ footer.tab.active {
   margin-top: 6rem;
 }
 
-
-
 /* Traveling */
 .traveling {
-   width: 100%;
-   border: 1px solid #ccc;
- }
- 
- .traveling .header__traveling {
-   margin-bottom: 1.5rem;
-   padding: 1rem 2rem;
- }
- .traveling .items__traveling {
-   display: flex;
-   flex-direction: row;
-   overflow: auto;
-   -ms-overflow-style: none;
- }
- 
- .traveling .item__traveling {
-   height: auto;
-   border-radius: 25px;
-   overflow: hidden;
-   flex: 0 0 350px;
- }
- 
- .traveling .item__traveling:not(:last-child) {
-   margin-left: 2rem;
- }
- 
- .item__traveling .image {
-   width: 100%;
-   position: relative;
-   height: 300px;
- }
- 
- .item__traveling .image img {
-   width: 100%;
-   object-fit: cover;
-   height: 100%;
- }
- 
- .item__traveling .desc__traveling {
-   background-color: var(--main-white);
-   width: 290px;
-   transform: translateX(-30px) translateY(-70px);
-   border-radius: 25px;
-   padding: 2rem;
-   box-shadow: 0 0 20px rgba(124, 121, 121, 0.582);
- }
- 
- .desc__traveling .offer__desc {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   height: 6rem;
- }
- 
- .desc__traveling .offer__desc .type--offer {
-   margin-right: 1.5rem;
-   color: #444;
-   font-weight: bold;
-   font-size: 1.3rem;
- }
- 
- .desc__traveling .title__desc {
-   font-size: 2.3rem;
-   font-weight: bolder;
-   margin-bottom: 2rem;
- }
- 
- .desc__traveling .about__desc {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin-top: 1rem;
-   color: #aaa;
-   font-size: 1.6rem;
- }
- 
- .desc__traveling .about__desc .fiedback__offer {
-   width: 50%;
- }
- 
- .about__desc .fiedback__offer .papulity__offer {
-   margin-right: 0.5rem;
-   width: 50%;
- }
- .papulity__offer .fa-heart {
-   color: red;
- }
- .about__desc .fiedback__offer .view__offer {
-   margin-right: 2rem;
-   width: 50%;
- }
- 
- .about__desc .check__offer {
-   width: 50%;
-   display: flex;
-   justify-content: flex-end;
-   align-items: center;
- }
- .about__desc .check__offer .fa-pen-to-square {
-   margin-right: 3rem;
- }
- 
- /* Avatar */
- .avatar-group {
-   margin-top: 1rem;
-   display: flex;
-   align-items: center;
- }
- 
- .avatar-group .avatar {
-   width: var(--avatar-sizes);
-   height: var(--avatar-sizes);
-   border: 3px solid var(--main-white);
-   border-radius: 50%;
-   overflow: hidden;
-   margin-left: -20px;
-   transition: all 0.4s ease-in-out;
-   position: relative;
- }
- 
- .avatar-group .avatar:hover:not(:last-of-type) {
-   transform: translateX(10px);
- }
- 
- .avatar-group .avatar img {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   object-position: top;
-   cursor: pointer;
- }
- 
- .hidden-avatars {
-   width: var(--avatar-sizes);
-   height: var(--avatar-sizes);
-   background-color: var(--color-primary);
-   color: var(--main-white);
-   border-radius: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
- }
- 
- @media screen and (min-width: 1024px) {
-   .traveling .item__traveling {
-     flex: 0 0 400px;
-   }
- 
-   .items__traveling::-webkit-scrollbar {
-     display: none;
-   }
- }
+  width: 100%;
+  border: 1px solid #ccc;
+}
 
- /* Accordion */
+.traveling .header__traveling {
+  margin-bottom: 1.5rem;
+  padding: 1rem 2rem;
+}
+.traveling .items__traveling {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  -ms-overflow-style: none;
+}
+
+.traveling .item__traveling {
+  height: auto;
+  border-radius: 25px;
+  overflow: hidden;
+  flex: 0 0 350px;
+}
+
+.traveling .item__traveling:not(:last-child) {
+  margin-left: 2rem;
+}
+
+.item__traveling .image {
+  width: 100%;
+  position: relative;
+  height: 300px;
+}
+
+.item__traveling .image img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.item__traveling .desc__traveling {
+  background-color: var(--main-white);
+  width: 290px;
+  transform: translateX(-30px) translateY(-70px);
+  border-radius: 25px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(124, 121, 121, 0.582);
+}
+
+.desc__traveling .offer__desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+}
+
+.desc__traveling .offer__desc .type--offer {
+  margin-right: 1.5rem;
+  color: #444;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.desc__traveling .title__desc {
+  font-size: 2.3rem;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+}
+
+.desc__traveling .about__desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  color: #aaa;
+  font-size: 1.6rem;
+}
+
+.desc__traveling .about__desc .fiedback__offer {
+  width: 50%;
+}
+
+.about__desc .fiedback__offer .papulity__offer {
+  margin-right: 0.5rem;
+  width: 50%;
+}
+.papulity__offer .fa-heart {
+  color: red;
+}
+.about__desc .fiedback__offer .view__offer {
+  margin-right: 2rem;
+  width: 50%;
+}
+
+.about__desc .check__offer {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.about__desc .check__offer .fa-pen-to-square {
+  margin-right: 3rem;
+}
+
+/* Avatar */
+.avatar-group {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.avatar-group .avatar {
+  width: var(--avatar-sizes);
+  height: var(--avatar-sizes);
+  border: 3px solid var(--main-white);
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: -20px;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+}
+
+.avatar-group .avatar:hover:not(:last-of-type) {
+  transform: translateX(10px);
+}
+
+.avatar-group .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  cursor: pointer;
+}
+
+.hidden-avatars {
+  width: var(--avatar-sizes);
+  height: var(--avatar-sizes);
+  background-color: var(--color-primary);
+  color: var(--main-white);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .traveling .item__traveling {
+    flex: 0 0 400px;
+  }
+
+  .items__traveling::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Accordion */
 .accordion {
   margin-bottom: 2rem;
 }
